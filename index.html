@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="高三复习" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="重庆高三复习系统" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+    <title>高三复习</title>
+    <style>
+      #splash {
+        position: fixed; inset: 0; z-index: 9999;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: #2563eb; color: white; font-family: -apple-system, sans-serif;
+      }
+      #splash .icon { width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 40px; margin-bottom: 16px; }
+      #splash .name { font-size: 20px; font-weight: 600; }
+      #splash .sub { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BtldSPw6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Da_qbNKm.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body>
+    <div id="splash">
+      <div class="icon">🎓</div>
+      <div class="name">高三复习</div>
+      <div class="sub">重庆专版</div>
+    </div>
+    <div id="root"></div>
+    <script>
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const s = document.getElementById('splash');
+          if (s) { s.style.transition = 'opacity 0.3s'; s.style.opacity = '0'; setTimeout(() => s.remove(), 300); }
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
